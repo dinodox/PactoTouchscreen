@@ -52,16 +52,21 @@ All GPIOs are **active LOW** using `gpiozero.OutputDevice`.
 - Works with XInput-based arcade controls  
 
 ## 🚀 Setup
-sudo apt update
-sudo apt install -y git python3-pygame python3-gpiozero python3-evdev
-git clone https://github.com/dinodox/PactoTouchscreen.git
-cd PactoTouchscreen
-python3 pacto.py
-
-
 sudo apt update  
-sudo apt install -y git python3-pygame python3-gpiozero python3-evdev
+sudo apt install -y git python3-pygame python3-gpiozero python3-evdev  
+git clone https://github.com/dinodox/PactoTouchscreen.git  
+cd PactoTouchscreen  
+python3 pacto.py  
 
-git clone https://github.com/dinodox/PactoTouchscreen.git
-cd PactoTouchscreen
-python3 pacto.py
+🔧 Optional
+Disable Raspberry Pi boot text
+Auto-login + auto-start pacto.py
+Run as a systemd service
+
+📝 Notes
+Most HDMI touchscreens should work
+Pactotech handles controller input natively
+
+📄 License
+MIT License
+Copyright (c) 2026 Dino Dox
