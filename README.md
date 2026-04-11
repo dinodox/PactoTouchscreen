@@ -60,13 +60,15 @@ cd PactoTouchscreen
 python3 pacto.py  
 
 🔧 Optional
-Disable Raspberry Pi boot text
-Auto-login + auto-start pacto.py
-Run as a systemd service
+Disable Raspberry Pi boot text.
+Auto-login + auto-start pacto.py.
+Run as a systemd service.  
+Remove some unused rpi components to speed up boot time.
 
 📝 Notes  
-Most HDMI touchscreens should work  
-Pactotech handles controller input natively
+Most HDMI touchscreens should work.  
+*May need to edit rpi config for resolution of touchscreen 800x480.  
+Pactotech handles controller input natively.
 
 📄 License  
 MIT License  
