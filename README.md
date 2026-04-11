@@ -43,7 +43,7 @@ All GPIOs are **active LOW** using `gpiozero.OutputDevice`.
 | Keyboard Mode  | GPIO20 | Pin 38 | Pulsed toggle |  
 | Ground         |        | Ground | Any Ground on Pi and Any Ground on Pacto |  
 
-*Disconnects and icons can not be pressed until re-enabled  
+*Keyboard Mode - Disconnects and icons can not be pressed until re-enabled  
 
 ## ⚙️ Features
 - Touchscreen-based control interface  
