@@ -67,7 +67,7 @@ Blank button icon supplied for custom icons.
 
 📝 Notes  
 Most HDMI touchscreens should work.  
-*May need to edit rpi config for resolution of touchscreen 800x480.  
+May need to edit rpi config for resolution of touchscreen 800x480.  
 Pactotech handles controller input natively.
 
 📄 License  
