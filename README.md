@@ -41,8 +41,8 @@ All GPIOs are **active LOW** using `gpiozero.OutputDevice`.
 | Turbo          | GPIO26 | Pin 37 | Active LOW (ground = ON) |
 | 8-to-6 Enable  | GPIO19 | Pin 35 | |
 | 8-to-6 Disable | GPIO25 | Pin 22 | Complementary line |
-| Keyboard Mode  | GPIO20 | Pin 38 | Pulsed toggle |
-| Disconnect     | GPIO21 | Pin 40 | Reset/disconnect |
+| Keyboard Mode  | GPIO20 | Pin 38 | Pulsed toggle |  
+*Disconnects and icons can not be pressed until re-enabled  
 **Ground:** Any Raspberry Pi GND → Any Pacto GND
 
 ## ⚙️ Features
