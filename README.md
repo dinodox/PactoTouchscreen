@@ -12,7 +12,8 @@ A control system for Pactotech hardware built using a Raspberry Pi with a touchs
   https://www.adafruit.com/product/2260  
 - 3D Printed Case  
   https://www.printables.com/model/899608-adafruit-5-hdmi-screen-case/related  
-- HDMI + USB cables (varies by Pi model)  
+- HDMI + USB cables (varies by Pi model)
+- 90° Right Angle Adapters for cleaner look  
 
 ## 🎮 About the Pactotech 4000T Interface
 - Supports up to 4 players  
