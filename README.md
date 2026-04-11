@@ -6,9 +6,8 @@ A control system for Pactotech hardware built using a Raspberry Pi with a touchs
 
 ## 🧰 Hardware Requirements
 - Raspberry Pi Zero (any Raspberry Pi model with HDMI should work)
-- Pactotech Control Interface Model 4000T  
-  (1000T & 2000T will also work but require code changes)
-  https://pactotech.com/en-us/products/copy-of-pacto-tech-4000t-4-player-control-interface-for-arcade-cabinets-supports-xinput-protocol
+- Pactotech Control Interface Model 4000T (1000T & 2000T will also work but require code changes)  
+  https://pactotech.com/en-us/products/copy-of-pacto-tech-4000t-4-player-control-interface-for-arcade-cabinets-supports-xinput-protocol  
 - Adafruit 5" 800x480 HDMI Touchscreen (or similar)
   https://www.adafruit.com/product/2260
 - 3D Printed Case
