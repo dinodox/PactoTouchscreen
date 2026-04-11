@@ -58,11 +58,11 @@ git clone https://github.com/dinodox/PactoTouchscreen.git
 cd PactoTouchscreen  
 python3 pacto.py  
 
-🔧 Optional
-Disable Raspberry Pi boot text.
-Auto-login + auto-start pacto.py.
+🔧 Optional  
+Disable Raspberry Pi boot text.  
+Auto-login + auto-start pacto.py.  
 Run as a systemd service.  
-Remove some unused rpi components to speed up boot time.
+Remove some unused rpi components to speed up boot time.  
 
 📝 Notes  
 Most HDMI touchscreens should work.  
