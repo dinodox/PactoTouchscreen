@@ -35,15 +35,15 @@ All GPIOs are **active LOW** using `gpiozero.OutputDevice`.
 | Analog Fast| GPIO5  | Pin 29 |
 | Analog Slow| GPIO6  | Pin 31 |
 ### ⚙️ Features
-| Feature         | GPIO   | Physical Pin | Notes |
-|----------------|--------|--------------|------|
-| Turbo          | GPIO26 | Pin 37 | Active LOW (ground = ON) |
-| 8-to-6 Enable  | GPIO19 | Pin 35 | |
-| 8-to-6 Disable | GPIO25 | Pin 22 | Complementary line |
-| Keyboard Mode  | GPIO20 | Pin 38 | Pulsed toggle |  
-| Ground         |        | Ground | Any Ground on Pi and Any Ground on Pacto |  
+| Feature         | GPIO   | Physical Pin |  
+|----------------|--------|--------------|  
+| Turbo          | GPIO26 | Pin 37 |  
+| 8-to-6 Enable  | GPIO19 | Pin 35 |  
+| 8-to-6 Disable | GPIO25 | Pin 22 |  
+| Keyboard Mode  | GPIO20 | Pin 38 |  
 
-*Keyboard Mode - Disconnects and icons can not be pressed until re-enabled  
+Any Ground on the Rpi to Any Ground on the Pacto.  
+*Keyboard Mode - Disconnects and icons can not be pressed until re-enabled  .
 
 ## ⚙️ Features
 - Touchscreen-based control interface  
