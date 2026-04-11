@@ -23,19 +23,6 @@ import time
 from gpiozero import OutputDevice
 from evdev import InputDevice, ecodes
 
-# -----------------------------#!/usr/bin/env python3
-# MIT License
-#
-# Copyright (c) 2026 Dino Dox
-
-import os
-import sys
-import pygame
-import threading
-import time
-from gpiozero import OutputDevice
-from evdev import InputDevice, ecodes
-
 # -----------------------------
 # ENV
 # -----------------------------
