@@ -63,6 +63,7 @@ Disable Raspberry Pi boot text.
 Auto-login + auto-start pacto.py.  
 Run as a systemd service.  
 Remove some unused rpi components to speed up boot time.  
+Blank button icon supplied for custom icons.  
 
 📝 Notes  
 Most HDMI touchscreens should work.  
