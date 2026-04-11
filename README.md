@@ -39,7 +39,7 @@ All GPIOs are **active LOW** using `gpiozero.OutputDevice`.
 |----------------|--------|--------------|  
 | Turbo          | GPIO26 | Pin 37 |  
 | 8-to-6 Enable  | GPIO19 | Pin 35 |  
-| 8-to-6 Disable | GPIO25 | Pin 22 |  
+| !8-to-6 Disable | GPIO25 | Pin 22 |  
 | Keyboard Mode  | GPIO20 | Pin 38 |  
 
 Any Ground on the Rpi to Any Ground on the Pacto.  
