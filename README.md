@@ -64,8 +64,8 @@ Disable Raspberry Pi boot text
 Auto-login + auto-start pacto.py
 Run as a systemd service
 
-📝 Notes
-Most HDMI touchscreens should work
+📝 Notes  
+Most HDMI touchscreens should work  
 Pactotech handles controller input natively
 
 📄 License
