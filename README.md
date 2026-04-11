@@ -68,6 +68,6 @@ Run as a systemd service
 Most HDMI touchscreens should work  
 Pactotech handles controller input natively
 
-📄 License
-MIT License
+📄 License  
+MIT License  
 Copyright (c) 2026 Dino Dox
