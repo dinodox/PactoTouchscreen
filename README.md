@@ -41,6 +41,7 @@ All GPIOs are **active LOW** using `gpiozero.OutputDevice`.
 | 8-to-6 Enable  | GPIO19 | Pin 35 |  
 | !8-to-6 Disable | GPIO25 | Pin 22 |  
 | Keyboard Mode  | GPIO20 | Pin 38 |  
+
 !Turbo is grounded directly to a spare ground on the Pacto board.  
 Any Ground on the Rpi to Any Ground on the Pacto.  
 Keyboard Mode - Disconnects and icons can not be pressed until re-enabled.  
