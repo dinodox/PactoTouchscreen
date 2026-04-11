@@ -13,7 +13,6 @@ A control system for Pactotech hardware built using a Raspberry Pi with a touchs
 - 3D Printed Case  
   https://www.printables.com/model/899608-adafruit-5-hdmi-screen-case/related  
 - HDMI + USB cables (varies by Pi model)
-- 90° Right Angle Adapters for cleaner look  
 
 ## 🎮 About the Pactotech 4000T Interface
 - Supports up to 4 players  
@@ -64,6 +63,7 @@ Disable Raspberry Pi boot text.
 Auto-login + auto-start pacto.py.  
 Run as a systemd service.  
 Remove some unused rpi components to speed up boot time.  
+90° Right Angle Adapters for cleaner look.  
 Blank button icon supplied for custom icons.  
 
 📝 Notes  
