@@ -59,7 +59,7 @@ cd PactoTouchscreen
 python3 pacto.py
 
 
-sudo apt update
+sudo apt update  
 sudo apt install -y git python3-pygame python3-gpiozero python3-evdev
 
 git clone https://github.com/dinodox/PactoTouchscreen.git
