@@ -58,28 +58,47 @@ Keyboard Mode - Disconnects and icons can not be pressed until re-enabled.
 Recommended Pi OS using the official imager: Raspberry Pi OS (Other) -> Raspberry Pi OS Lite (32-Bit)  
 Edit config.txt and add lines for the resolution of your touchscreen, for example:  
 
+```````````````````````
 hdmi_force_hotplug=1  
 hdmi_group=2  
 hdmi_mode=87  
 hdmi_cvt=800 480 60 6 0 0 0  
+```````````````````````
   
 Some touchscreens may also require this video driver in config.txt:  
+```````````````````````
 dtoverlay=vc4-kms-v3d  
-
+```````````````````````
+```````````````````````
 sudo raspi-config  
+```````````````````````
 System Options-> Enable Auto Login  
 Install Dependencies:  
+```````````````````````
 sudo apt update  
+```````````````````````
+```````````````````````
 sudo apt install -y git python3-pygame python3-gpiozero python3-evdev libsdl2-2.0-0  
+```````````````````````
+```````````````````````
 sudo apt install -y libegl1 libgles2 libgl1 libdrm2  
+```````````````````````
+```````````````````````
 git clone https://github.com/dinodox/PactoTouchscreen.git  
+```````````````````````
+```````````````````````
 cd PactoTouchscreen  
+```````````````````````
+```````````````````````
 python3 pacto.py  
+```````````````````````
 *Some touchscreens may see a runtime warning but this can be ignored, everything will still work fine.  
 
 🔧 Optional  
 Disable Raspberry Pi boot text.    
-sudo nano /boot/cmdline.txt  
+```````````````````````
+sudo nano /boot/cmdline.txt
+```````````````````````
 Find:      console=serial0,115200 console=tty1  
 Change to: console=serial0,115200 console=tty3  
 Add at the end of the same line: quiet splash loglevel=0 vt.global_cursor_default=0  
@@ -88,7 +107,9 @@ Example cmdline.txt: console=tty3 root=PARTUUID=xxxx rootfstype=ext4 fsck.repair
   
 Auto-Start pacto.py.  
 Run as a systemd service.  
-sudo nano /etc/systemd/system/pacto.service  
+```````````````````````
+sudo nano /etc/systemd/system/pacto.service
+```````````````````````
 Paste below:  
 ```````````````````````
 [Unit]
@@ -119,7 +140,6 @@ Blank button icon supplied for custom icons.
 
 📝 Notes  
 Most HDMI touchscreens should work.  
-May need to edit rpi config for resolution of touchscreen 800x480.  
 Pactotech handles controller input natively.
 
 📄 License  
