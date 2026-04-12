@@ -55,10 +55,11 @@ Keyboard Mode - Disconnects and icons can not be pressed until re-enabled.
 ## 🚀 Setup
 Recommended Pi OS using the official imager: Raspberry Pi OS (Other) -> Raspberry Pi OS Lite (32-Bit)  
 Edit Config.txt and add lines for the resolution of your touchscreen, for example:  
-|hdmi_force_hotplug=1|  
-|hdmi_group=2|  
-|hdmi_mode=87|  
-|hdmi_cvt=800 480 60 6 0 0 0|  
+| hdmi_force_hotplug=1| |
+| hdmi_group=2 |
+| hdmi_mode=87 |
+| hdmi_cvt=800 480 60 6 0 0 0| |
+
 sudo apt update  
 sudo apt install -y git python3-pygame python3-gpiozero python3-evdev libsdl2-2.0-0  
 git clone https://github.com/dinodox/PactoTouchscreen.git  
