@@ -75,11 +75,43 @@ sudo apt install -y libegl1 libgles2 libgl1 libdrm2
 git clone https://github.com/dinodox/PactoTouchscreen.git  
 cd PactoTouchscreen  
 python3 pacto.py  
+*Some touchscreens may see a runtime warning but this can be ignored, everything will still work fine.  
 
 🔧 Optional  
 Disable Raspberry Pi boot text.  
-Auto-login + auto-start pacto.py.  
+sudo nano /boot/cmdline.txt
+Find:      console=serial0,115200 console=tty1
+Change to: console=serial0,115200 console=tty3
+Add at the end of the same line: quiet splash loglevel=0 vt.global_cursor_default=0  
+**Do not copy and paste the example below, PARTUUID must remain the same.   
+Example cmdline.txt: console=tty3 root=PARTUUID=xxxx rootfstype=ext4 fsck.repair=yes rootwait quiet splash loglevel=0 vt.global_cursor_default=0  
+
+Auto-Start pacto.py.  
 Run as a systemd service.  
+sudo nano /etc/systemd/system/pacto.service
+Paste below:
+
+[Unit]
+Description=Pacto UI
+After=multi-user.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/PactoTouchscreen
+ExecStart=/usr/bin/python3 /home/pi/PactoTouchscreen/pacto.py
+Restart=always
+
+# Pygame / framebuffer
+Environment=SDL_VIDEODRIVER=KMSDRM
+Environment=SDL_FBDEV=/dev/fb0
+
+# Give display time to initialize (important for your screen)
+ExecStartPre=/bin/sleep 2
+
+[Install]
+WantedBy=multi-user.target  
+
 Remove some unused rpi components to speed up boot time.  
 90° Right Angle Adapters for cleaner look.  
 Blank button icon supplied for custom icons.  
