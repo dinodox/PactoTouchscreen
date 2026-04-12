@@ -56,12 +56,14 @@ Keyboard Mode - Disconnects and icons can not be pressed until re-enabled.
 
 ## 🚀 Setup
 Recommended Pi OS using the official imager: Raspberry Pi OS (Other) -> Raspberry Pi OS Lite (32-Bit)  
-Edit Config.txt and add lines for the resolution of your touchscreen, for example:  
+Edit config.txt and add lines for the resolution of your touchscreen, for example:  
 
 hdmi_force_hotplug=1  
 hdmi_group=2  
 hdmi_mode=87  
 hdmi_cvt=800 480 60 6 0 0 0  
+Some touchscreens may also require this video driver in config.txt:  
+dtoverlay=vc4-kms-v3d  
 
 sudo raspi-config  
 System Options-> Enable Auto Login  
