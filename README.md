@@ -53,6 +53,7 @@ Keyboard Mode - Disconnects and icons can not be pressed until re-enabled.
 - Works with XInput-based arcade controls  
 
 ## 🚀 Setup
+Recommended Pi OS using the official imager: Raspberry Pi OS (Other) -> Raspberry Pi OS Lite (32-Bit)  
 sudo apt update  
 sudo apt install -y git python3-pygame python3-gpiozero python3-evdev libsdl2-2.0-0  
 git clone https://github.com/dinodox/PactoTouchscreen.git  
