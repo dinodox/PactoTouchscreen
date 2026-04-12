@@ -12,7 +12,9 @@ A control system for Pactotech hardware built using a Raspberry Pi with a touchs
   https://www.adafruit.com/product/2260  
 - 3D Printed Case  
   https://www.printables.com/model/899608-adafruit-5-hdmi-screen-case/related  
-- HDMI + USB cables (varies by Pi model)
+- HDMI + USB cables (varies by Pi model)  
+- A usb keyboard for installation.  
+- Micro USB adapter for usb keyboard.  
 
 ## 🎮 About the Pactotech 4000T Interface
 - Supports up to 4 players  
@@ -55,13 +57,17 @@ Keyboard Mode - Disconnects and icons can not be pressed until re-enabled.
 ## 🚀 Setup
 Recommended Pi OS using the official imager: Raspberry Pi OS (Other) -> Raspberry Pi OS Lite (32-Bit)  
 Edit Config.txt and add lines for the resolution of your touchscreen, for example:  
-| hdmi_force_hotplug=1|  
-| hdmi_group=2 |  
-| hdmi_mode=87 |  
-| hdmi_cvt=800 480 60 6 0 0 0| |  
 
+hdmi_force_hotplug=1  
+hdmi_group=2  
+hdmi_mode=87  
+hdmi_cvt=800 480 60 6 0 0 0  
+
+sudo raspi-config  
+System Options-> Enable Auto Login  
 sudo apt update  
 sudo apt install -y git python3-pygame python3-gpiozero python3-evdev libsdl2-2.0-0  
+sudo apt install -y libegl1 libgles2 libgl1 libdrm2  
 git clone https://github.com/dinodox/PactoTouchscreen.git  
 cd PactoTouchscreen  
 python3 pacto.py  
