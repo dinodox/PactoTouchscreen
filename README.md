@@ -78,18 +78,18 @@ python3 pacto.py
 *Some touchscreens may see a runtime warning but this can be ignored, everything will still work fine.  
 
 🔧 Optional  
-Disable Raspberry Pi boot text.  
-sudo nano /boot/cmdline.txt
-Find:      console=serial0,115200 console=tty1
-Change to: console=serial0,115200 console=tty3
+Disable Raspberry Pi boot text.    
+sudo nano /boot/cmdline.txt  
+Find:      console=serial0,115200 console=tty1  
+Change to: console=serial0,115200 console=tty3  
 Add at the end of the same line: quiet splash loglevel=0 vt.global_cursor_default=0  
 **Do not copy and paste the example below, PARTUUID must remain the same.   
 Example cmdline.txt: console=tty3 root=PARTUUID=xxxx rootfstype=ext4 fsck.repair=yes rootwait quiet splash loglevel=0 vt.global_cursor_default=0  
-
+  
 Auto-Start pacto.py.  
 Run as a systemd service.  
-sudo nano /etc/systemd/system/pacto.service
-Paste below:
+sudo nano /etc/systemd/system/pacto.service  
+Paste below:  
 
 [Unit]
 Description=Pacto UI
