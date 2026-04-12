@@ -134,7 +134,7 @@ ExecStartPre=/bin/sleep 2
 [Install]
 WantedBy=multi-user.target  
 ```````````````````````
-ESC on keyboard will end pacto.py.  
+
 Remove some unused rpi components to speed up boot time.  
 ```````````````````````
 systemctl list-unit-files --type=service
@@ -161,7 +161,8 @@ dtoverlay=disable-bt
 `````````````````````
 
 📝 Notes  
-90° Right Angle Adapters for cleaner look.  
+ESC on keyboard will end pacto.py.  
+90° Right Angle HDMI & USB Adapters recommended for cleaner look.  
 Blank button icon supplied for custom icons.  
 Most HDMI touchscreens should work.  
 Pactotech handles controller input natively.
