@@ -134,12 +134,35 @@ ExecStartPre=/bin/sleep 2
 [Install]
 WantedBy=multi-user.target  
 ```````````````````````
-
+ESC on keyboard will end pacto.py.  
 Remove some unused rpi components to speed up boot time.  
-90° Right Angle Adapters for cleaner look.  
-Blank button icon supplied for custom icons.  
+```````````````````````
+systemctl list-unit-files --type=service
+```````````````````````
+Some files that can be disabled that are not needed and can speed up boot time:  
+```````````````````````
+sudo systemctl disable bluetooth.service
+sudo systemctl disable hciuart.service
+sudo systemctl disable triggerhappy.service
+sudo systemctl disable avahi-daemon.service
+sudo systemctl disable dphys-swapfile.service
+sudo systemctl disable keyboard-setup.service
+sudo systemctl disable apt-daily.service
+sudo systemctl disable apt-daily-upgrade.service
+```````````````````````
+Disable wifi will also speed up boot time if not needed:  
+```````````````````````
+sudo nano /boot/config.txt
+```````````````````````
+Add:  
+`````````````````````
+dtoverlay=disable-wifi
+dtoverlay=disable-bt
+`````````````````````
 
 📝 Notes  
+90° Right Angle Adapters for cleaner look.  
+Blank button icon supplied for custom icons.  
 Most HDMI touchscreens should work.  
 Pactotech handles controller input natively.
 
