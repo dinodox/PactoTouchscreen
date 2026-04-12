@@ -62,6 +62,7 @@ hdmi_force_hotplug=1
 hdmi_group=2  
 hdmi_mode=87  
 hdmi_cvt=800 480 60 6 0 0 0  
+  
 Some touchscreens may also require this video driver in config.txt:  
 dtoverlay=vc4-kms-v3d  
 
