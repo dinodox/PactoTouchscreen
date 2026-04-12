@@ -69,6 +69,7 @@ Some touchscreens may also require this video driver in config.txt:
 ```````````````````````
 dtoverlay=vc4-kms-v3d  
 ```````````````````````
+Auto Login:  
 ```````````````````````
 sudo raspi-config  
 ```````````````````````
