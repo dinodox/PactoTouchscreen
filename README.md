@@ -90,7 +90,7 @@ Auto-Start pacto.py.
 Run as a systemd service.  
 sudo nano /etc/systemd/system/pacto.service  
 Paste below:  
-
+```````````````````````
 [Unit]
 Description=Pacto UI
 After=multi-user.target
@@ -111,6 +111,7 @@ ExecStartPre=/bin/sleep 2
 
 [Install]
 WantedBy=multi-user.target  
+```````````````````````
 
 Remove some unused rpi components to speed up boot time.  
 90° Right Angle Adapters for cleaner look.  
