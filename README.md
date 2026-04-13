@@ -74,6 +74,7 @@ Auto Login:
 sudo raspi-config  
 ```````````````````````
 System Options-> Enable Auto Login  
+
 Install Dependencies:  
 ```````````````````````
 sudo apt update  
