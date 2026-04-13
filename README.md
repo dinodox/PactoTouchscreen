@@ -103,7 +103,10 @@ sudo nano /boot/cmdline.txt
 ```````````````````````
 Find:      console=serial0,115200 console=tty1  
 Change to: console=serial0,115200 console=tty3  
-Add at the end of the same line: quiet splash loglevel=0 vt.global_cursor_default=0  
+Add at the end of the same line: 
+```````````````````````
+quiet splash loglevel=0 vt.global_cursor_default=0
+```````````````````````
 **Do not copy and paste the example below, PARTUUID must remain the same.   
 Example cmdline.txt: console=tty3 root=PARTUUID=xxxx rootfstype=ext4 fsck.repair=yes rootwait quiet splash loglevel=0 vt.global_cursor_default=0  
   
