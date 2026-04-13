@@ -46,13 +46,13 @@ All GPIOs are **active LOW** using `gpiozero.OutputDevice`.
 
 Turbo is grounded directly to a spare ground on the Pacto board.  
 Any Ground on the Rpi to Any Ground on the Pacto.  
-Keyboard Mode - Disconnects and icons can not be pressed until re-enabled.  
 
 ## ⚙️ Features
 - Touchscreen-based control interface  
 - Designed for Pactotech integration  
 - Compatible with multiple Raspberry Pi models  
-- Works with XInput-based arcade controls  
+- Works with XInput-based arcade controls
+- Keyboard Mode - Disconnects and icons can not be pressed until re-enabled.  
 
 ## 🚀 Setup
 Recommended Pi OS using the official imager: Raspberry Pi OS (Other) -> Raspberry Pi OS Lite (32-Bit)  
