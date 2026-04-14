@@ -22,9 +22,9 @@ A control system for Pactotech hardware built using a Raspberry Pi with a touchs
 - Works with most emulators and PC games  
 - Flexible input modes (digital, analog, twinstick)
 
-## 🔌 GPIO Pinout (Pacto 4000T → Raspberry Pi)
 <img width="1190" height="876" alt="pacto-4000t" src="https://github.com/user-attachments/assets/c181a236-baa0-4b37-9ad0-cfd24ca10f7d" />
 
+## 🔌 GPIO Pinout (Pacto 4000T → Raspberry Pi)  
 All GPIOs are **active LOW** using `gpiozero.OutputDevice`.
 ### 🎮 Player Mode
 | Mode        | GPIO   | Physical Pin |
